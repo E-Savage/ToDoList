@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDoList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" FontSize="24">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <TextBlock>Tasks to do:</TextBlock>
+            <TextBox>Blah blah</TextBox>
+            <ListView MinHeight="200"></ListView>
+            <TextBlock>Enter Task Below:</TextBlock>
+            <TextBox>Enter Task Here</TextBox>
+            <Button>Add Task to List</Button>
+        </StackPanel>
+        
+        <Button Grid.Column="0" Grid.Row="1" Margin="0,10,20,0">Delete Task</Button>
+        <Button Grid.Column="1" Grid.Row="1" Margin="20,10,0,0">Edit Task</Button>
     </Grid>
 </Window>
