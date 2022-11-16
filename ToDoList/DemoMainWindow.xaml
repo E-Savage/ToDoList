@@ -21,13 +21,13 @@
             <!--<TextBlock>Tasks to do:</TextBlock>
             <TextBox>Blah blah</TextBox>-->
 
-            <local:UCLabelTextBxInput x:Name="TxtUCSaveToFileLocatoin" Title="Save to File Location" MaxLength="50"></local:UCLabelTextBxInput>
+            <local:UCLabelTextBxInput x:Name="TxtUCSaveToFileLocation" Title="Save to File Location" MaxLength="50"></local:UCLabelTextBxInput>
             <ListView MinHeight="200"></ListView>
             <local:UCLabelTextBxInput x:Name="TxtUCEnteredTask" Title="Enter Task Here:" MaxLength="50"></local:UCLabelTextBxInput>
             <Button>Add Task to List</Button>
         </StackPanel>
 
         <Button Grid.Column="0" Grid.Row="1" Margin="0,10,20,0">Delete Task</Button>
-        <Button Grid.Column="1" Grid.Row="1" Margin="20,10,0,0">Edit Task</Button>
+        <Button Grid.Column="1" Grid.Row="1" Margin="20,10,0,0">Save to File</Button>
     </Grid>
 </Window>
