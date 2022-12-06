@@ -1,0 +1,48 @@
+﻿<Window x:Class="ToDoList.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="770" Width="350" Background="CadetBlue">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"  Background="Beige" FontSize="24" 
+                   TextAlignment="Center" Margin="10" Padding="15">
+            Help Page <LineBreak/>
+            <Italic>Read Instructions Below</Italic></TextBlock>
+        <TextBlock Grid.Row="1" Background="Aquamarine" Margin="10" Padding="10">
+            <Bold>To add a task:</Bold> <LineBreak></LineBreak>
+            Click on the textbox with "Do the dishes" in it<LineBreak/>
+            edit the text to match the task you want to complete<LineBreak/>
+            and then click add task.
+        </TextBlock>
+        <TextBlock Grid.Row="2" Background="Aquamarine" Margin="10" Padding="10">
+            <Bold>To edit a task:</Bold><LineBreak/>
+            Click on the task and then click edit. When you <LineBreak/>
+            click on the "Edit Task" button a new Window will<LineBreak/>
+            open. When the new window opens click on the box<LineBreak/>
+            with "Edit your task here" and edit the text.<LineBreak/>
+            When you finished typing what you want, then<LineBreak/>
+            click on the "Complete Edit" Button.
+        </TextBlock>
+        <TextBlock Grid.Row="3" Background="Aquamarine" Margin="10" Padding="10">
+            <Bold>To delete tasks:</Bold> <LineBreak/>
+            Click on a task (or multiple tasks) and press the<LineBreak/>
+            "Delete Task" button.<LineBreak/>
+        </TextBlock>
+        <Button Grid.Column="0" Grid.Row="4" Height="30" Width="120" Click="Button_Click">Close Help Window</Button>
+    </Grid>
+</Window>
